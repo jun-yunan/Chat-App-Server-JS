@@ -9,7 +9,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://stately-gumdrop-cd1759.netlify.app",
+    // origin: "https://stately-gumdrop-cd1759.netlify.app", //netlify
+    origin: "https://chat-app-nak.vercel.app", //vercel
     methods: ["GET", "POST"],
   },
 });
